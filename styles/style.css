@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    background-image: url("../assets/home/background-home-desktop.jpg");
+    background-size: cover;
+    animation: transition 1s;
+}
+
+@keyframes transition {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+}
+
+header div.logo{
+    margin: 47px 38% 0 40px;
+}
+
+header div.logo img{
+    width: 110%;
+}
+
+header div.trait{
+    content: '';
+    height: 1px;
+    width: 37.5%;
+    background: rgba(128, 128, 128, .501);
+    position: absolute;
+    top: 90px;
+    left: 140px;
+    z-index: 2;
+}
+
+header div.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(128,109,109,.2);
+    backdrop-filter: blur(10px);
+    width: 70%;
+    height: 100px;
+    margin-top: 40px;
+}
+
+header div.nav ul{
+    display: flex;
+    list-style: none;
+}
+
+header div.nav ul li{
+    color: rgba(255,255,255,.7);
+    font-size: 23px;
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed', sans-serif;
+    padding: 0 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+header div.nav ul li a{
+    padding: 34px 0;    
+    transition: .2s ease-in-out;
+}
+
+
+header div.nav ul li a:hover{
+    border-bottom: 2px solid white;
+}
+
+
+header div.nav ul li strong{
+    font-weight: bold;
+    color: #fff;
+}
+
+section.home{
+    animation: up-home 1.2s ease;
+}
+
+@keyframes up-home {
+    from{transform: translateY(900px);}
+    to{transform: translateY(0);}
+}
+
+section.home div.texte{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-top: 260px;
+}
+
+
+
+section.home div.texte h2{
+    font-family: "Barlow Condensed",sans-serif;
+    font-size: 35px;
+    color: rgba(255,255,255,.83);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-right: 100px;
+}
+
+section.home div.texte h3{
+    font-family: "Bellefair",serif;
+    text-transform: uppercase;
+    font-size: 115px;
+    font-weight: lighter;
+    color: #fff;
+    margin: 5px 180px 20px 0;
+}
+
+section.home div.texte p{
+    font-family: "Barlow",sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    color: rgba(230, 230, 250, .6);
+    line-height: 1.8;
+    width: 55%;
+}
+
+div.explore .btn{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 20%;
+    right: 17%;
+    width: 290px;
+    height: 290px;
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: .5s;
+}
+
+div.explore .btn:hover{
+    transform: scale(1.25);
+    box-shadow: 0px 0px 15px #fff;
+}
+
+div.explore .btn span{
+    display: block;
+    width: 100%;
+    font-family: "Bellefair",serif;
+    font-size: 50px;
+    text-align: center;
+    color: #000;
+}
+
+
+/*  RESPONSIVE */ 
+
+@media screen and (max-width: 1300px) {
+    body{
+        background-image: url("../assets/home/background-home-mobile.jpg");
+        background-size: cover;
+    }
+}

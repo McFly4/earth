@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/style.css">
+	<link rel="stylesheet" href="styles/technology.css">
+	<script src="styles/glide/glide.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="styles/glide/glide.core.min.css">
+    <link rel="stylesheet" href="styles/glide/glide.theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+	<style>@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&family=Bellefair&display=swap');</style>	
+	<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+	
+	<title>Space</title>
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<img src="assets/shared/logo.svg">
+		</div>
+		<div class="trait"></div>
+		<div class="nav">
+			<ul>
+				<li><a href="index.html"><strong>00 </strong>home</a></li>
+				<li><a href="destination.html" ><strong>01 </strong>destination</a></li>
+				<li><a href="crew.html"><strong>02 </strong>crew</a></li>
+				<li><a href="technology.html" style="border-bottom: 2px solid white;"><strong>03 </strong>technology</a></li>
+			</ul>
+		</div>
+	</header>
+
+	<div class="title">
+		<h1><strong>03</strong> space launch 101</h1>
+	</div>
+
+	<div class="images glide">
+		<div class="glide__track" data-glide-el="track">
+			<ul class="glide__slides">
+				<li class="glide__slide">
+					<div class="container">
+						<div data-glide-el="controls[nav]" class="buttons">
+							<button data-glide-dir="=0" class="button--active glide__bullet--active">1</button>
+							<button data-glide-dir="=1">2</button>
+							<button data-glide-dir="=2">3</button>
+						</div>
+						<div class="texte">
+							<div class="header">
+								<p>THE TERMINOLOGY ...</p>
+								<h2>launch vehicule</h2>
+							</div>
+							<div class="sub-header">
+								<p>
+									A launch vehicle or carrier rocket is a
+									rocket-propelled vehicle used to carry a 
+									payload from Earth's surface to space, 
+									usually to Earth orbit or beyond. Our WEB-X 
+									carrier rocket is the most powerful in operation. 
+									Standing 150 metres tall, it's quite an awe-inspiring 
+									sight on the launch pad!
+								</p>
+							</div>
+						</div>
+						<div class="image">
+							<img src="assets/technology/image-launch-vehicle-portrait.jpg">
+						</div>
+					</div>
+				</li>
+
+				<li class="glide__slide">
+					<div class="container">
+						<div data-glide-el="controls[nav]" class="buttons">
+							<button data-glide-dir="=0">1</button>
+							<button data-glide-dir="=1" class="button--active glide__bullet--active">2</button>
+							<button data-glide-dir="=2">3</button>
+						</div>
+						<div class="texte">
+							<div class="header">
+								<p>THE TERMINOLOGY ...</p>
+								<h2>spaceport</h2>
+							</div>
+							<div class="sub-header">
+								<p>
+									A spaceport or cosmodrome is a site for 
+									launching (or receiving) spacecraft, by 
+									analogy to the seaport for ships or airport 
+									for aircraft. Based in the famous Cape Canaveral, 
+									our spaceport is ideally situated to take advantage 
+									of the Earth’s rotation for launch.
+								</p>
+							</div>
+						</div>
+						<div class="image">
+							<img src="assets/technology/image-spaceport-portrait.jpg">
+						</div>
+					</div>
+				</li>
+
+				<li class="glide__slide">
+					<div class="container">
+						<div data-glide-el="controls[nav]" class="buttons">
+							<button data-glide-dir="=0">1</button>
+							<button data-glide-dir="=1">2</button>
+							<button data-glide-dir="=2" class="button--active glide__bullet--active">3</button>
+						</div>
+						<div class="texte">
+							<div class="header">
+								<p>THE TERMINOLOGY ...</p>
+								<h2>space capsule</h2>
+							</div>
+							<div class="sub-header">
+								<p>
+									A space capsule is an often-crewed 
+									spacecraft that uses a blunt-body reentry 
+									capsule to reenter the Earth's atmosphere without 
+									wings. Our capsule is where you'll spend your time 
+									during the flight. It includes a space gym, cinema, 
+									and plenty of other activities to keep you entertained.
+								</p>
+							</div>
+						</div>
+						<div class="image">
+							<img src="assets/technology/image-space-capsule-portrait.jpg">
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+	  <script>
+		new Glide(".images",{
+			type: 'carousel',
+			perView: 1,
+			focusAt: 'center',
+			gap: 40,
+			breakpoints: {
+				1200:{
+			 		perView: 3
+				},
+				800:{
+			  		perView: 2
+				}
+		  	}
+		}).mount();
+	  </script>
+
+
+</body>
+</html>

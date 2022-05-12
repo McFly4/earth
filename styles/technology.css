@@ -1,0 +1,110 @@
+body{
+    background-image: url("../assets/technology/background-technology-desktop.jpg");
+    background-size: cover;
+}
+
+.glide {
+    pointer-events: none;
+}
+
+div.title{
+    margin: 60px 0 0 200px;
+}
+
+div.title strong{
+    color: #755959;
+    font-weight: 300;
+}
+
+div.title h1{
+    font-family: "Barlow Condensed",sans-serif;
+    color: #fff;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 7px 0 0 0;
+    font-size: 35px;
+    letter-spacing: 3px;
+    word-spacing: 20px;
+}
+
+div.container{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+div.buttons{
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    margin-left: 150px;
+}
+
+div.buttons button{
+    width: 90px;
+    height: 90px;
+    font-family: "Bellefair", serif;
+    font-size: 47.5px;
+    cursor: pointer;
+    border: 1px solid gray;
+    border-radius: 100%;
+    background: none;
+    color: white;
+    margin: 10px;
+    transition: .5s ease;
+    pointer-events: auto;
+}
+
+div.buttons button:hover{
+    background: white;
+    color: inherit;
+}
+
+div.buttons button.button--active{
+    background: white;
+    color: inherit;
+}
+
+div.texte{
+    color: white;
+    width: 50%;
+    margin: 0 0 0 150px;
+}
+
+div.texte div.header{
+    text-transform: uppercase;
+}
+
+div.texte div.header p{
+    text-transform: none;
+    font-family: "Barlow Condensed",sans-serif;
+    color: #ac8e8e;
+    font-weight: 300;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+div.texte div.header h2{
+    font-family: "Bellefair",serif;
+    font-size: 76px;
+    color: #fff;
+    font-weight: lighter;
+}
+
+div.texte div.sub-header{
+    margin-top: 50px;
+    margin-left: 25px;
+    width: 89%;
+}
+
+div.texte div.sub-header p{
+    width: 70%;
+    font-family: "Barlow",sans-serif;
+    font-size: 20px;
+    line-height: 2;
+    color: rgba(255,255,255,.8);
+}
+
+div.image img{
+    width: 105%;
+}
